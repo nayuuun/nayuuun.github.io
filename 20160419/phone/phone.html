@@ -1,5 +1,5 @@
 <!? (1) milkcocoa.jsの読み込み ?>
- <script src=”http://cdn.mlkcca.com/v2.0.0/milkcocoa.js”></script>
+ <script src='https://cdn.mlkcca.com/v2.0.0/milkcocoa.js'></script>
 
 <!? milkcocoaのセットアップ ?>
  <script>
@@ -7,7 +7,7 @@
 　　var datastore = milkcocoa.dataStore('store'); // (3) データストアへの接続
 
 　　// (4) 加速度センサの値をPCサイト側に送信
- 　　window.addEventListener(“devicemotion”, function(e) {
+ 　　window.addEventListener('devicemotion', function(e) {
 　　　　datastore.send({
 　　　　　　x: e.accelerationIncludingGravity.x,
 　　　　　　y: e.accelerationIncludingGravity.y,
